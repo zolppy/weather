@@ -1,25 +1,21 @@
 @charset "UTF-8";
 
-/* Fazer através de arquivo "Reset.css" */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-  box-sizing: border-box;
-}
-
 body {
   background-image: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Esconder e mostrar elemento dinamicamente, através de JavaScript */
-/* Também pode ser criado uma classe "centered", que centraliza elementos com flex-box */
 .hide {
   display: none;
+}
+
+/* Centralização vertical e horizontal de elementos */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -32,6 +28,11 @@ body {
 
 .form h3 {
   margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  font-weight: bold;
 }
 
 .form-input-container {
@@ -65,9 +66,6 @@ body {
 }
 
 #weather-data h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: .6rem;
 }
 
@@ -80,25 +78,16 @@ body {
 }
 
 #country {
-  height: 15px;
+  height: 25px;
 }
 
 #description-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: .6rem 0;
 }
 
 #description {
   font-weight: bold;
   text-transform: capitalize;
-}
-
-#details-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #details-container #humidity {
